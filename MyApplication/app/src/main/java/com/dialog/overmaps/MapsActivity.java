@@ -52,7 +52,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         fabZoomOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // bug not exists here
+                // we dont pop dialog here in order to show the difference
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(mGreeceCoords, 1));
             }
         });
